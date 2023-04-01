@@ -28,10 +28,10 @@
         .main-1 {
             display: flex;
             align-items: center;
-            margin: 10px;
-            padding: 5px;
-            font-size: larger;
+            margin: 10px 10px 0px 10px;
+            font-size: 25px;
             font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         }
 
         .main-1 i {
@@ -71,13 +71,15 @@
         li .dropdown-content {
             display: none;
             position: absolute;
+            max-width: 120px;
+            color: black;
+            padding: 12px 16px;
+            background-color: rgb(238, 237, 236);
         }
 
         li .dropdown-content a {
             text-decoration: none;
-            max-width: 160px;
-            color: black;
-            padding: 12px 16px;
+
         }
 
         .dropdown:hover .dropdown-content {
@@ -151,31 +153,33 @@
 
         .section-2 .img {
             margin: 0px 0px 0px 0px;
+            position: relative;
         }
 
-        .section-2 .img .img1 {
-            position: relative;
 
-            height: 200px;
-            width: 200px;
+        .section-2 .img .img1 {
+            position: absolute;
+
+            height: 280px;
+            width: 250px;
             border-radius: 20px;
-            left: 260px;
+            left: 130px;
             top: 100px;
         }
 
         .section-2 .img .img2 {
             position: absolute;
-            height: 200px;
-            width: 200px;
+            height: 280px;
+            width: 250px;
             border-radius: 20px;
             border: 6px solid white;
-            left: 360px;
-            top: 550px;
+            left: 230px;
+            top: 200px;
 
         }
 
         .section-2 .con {
-            margin: 60px 110px 70px 420px
+            margin: 60px 40px 50px 500px
         }
 
         .section-2 .con .p1 {
@@ -213,6 +217,89 @@
             height: 100px;
             width: 100px;
         }
+
+        /* <!-- section-3   --> */
+        .section-3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 30px;
+            margin: 30px;
+
+
+
+
+
+
+        }
+
+        .section-3 .frute1,
+        .section-3 .frute2,
+        .section-3 .frute3 {
+            border: 2px solid black;
+            /* height: 700px; */
+
+        }
+
+        .section-3 .frute1 img,
+        .section-3 .frute2 img,
+        .section-3 .frute3 img {
+            margin: 40px 0px 10px 30px;
+            border-radius: 50%;
+            border: 10px solid rgb(215, 201, 201);
+        }
+
+        .section-3 .frute1 h3 a,
+        .section-3 .frute2 h3 a,
+        .section-3 .frute3 h3 a {
+            font-size: 29px;
+            color: black;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 10px 20px;
+        }
+
+        .section-3 .frute1 p,
+        .section-3 .frute2 p,
+        .section-3 .frute3 p {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 10px 20px;
+        }
+
+        /* section -4  */
+        .section-4 {
+            display: flex;
+        }
+
+        .section-4 h2 {
+            font-size: 35px;
+            font-weight: bolder;
+        }
+
+        .section-4 h2 span {
+            font-size: 35px;
+            font-weight: bolder;
+            color: #f7783c;
+        }
+
+
+        .section-4 .con {
+            display: grid;
+            grid-template-columns: auto auto;
+            font-size: 19px;
+            line-height: 25px;
+            gap: 30px;
+        }
+
+        .section-4 .manu {
+            color: antiquewhite;
+            background-color: #f7783c;
+            padding: 13px 13px;
+            margin: 0px 10px;
+
+            font-size: 17px;
+            border-radius: 25px;
+        }
     </style>
 </head>
 
@@ -236,7 +323,7 @@
                 <li><a href="#">Landing page</a></li> -->
                 </li>
 
-                <li><a href="#" class="dropdown">Blog</a>
+                <li class="dropdown"><a href="#">Blog</a>
 
                     <div class="dropdown-content">
                         <a href="#">Blog Page</a>
@@ -289,6 +376,49 @@
             <img src="img/sign.png" alt="">
         </div>
     </div>
+    <!-- section-3   -->
+    <div class="section-3">
+        <div class="frute1">
+            <img src="img/s1.jpg" alt="">
+            <h3><a href="#">Green Salad</a></h3>
+            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
+        </div>
+        <div class="frute2">
+            <img src="img/s2.jpg" alt="">
+            <h3><a href="#">Fruit Salad</a></h3>
+            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
+        </div>
+        <div class="frute3">
+            <img src="img/s3.jpg" alt="">
+            <h3><a href="#">Dessert Salad</a></h3>
+            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
+        </div>
+    </div>
+    <!-- /* section -4  */ -->
+
+    <div class="section-4">
+        <div class="man1">
+            <h2>Our Restaurants <span>Menu</span> </h2>
+            <div class="con">
+                <div class="con-1">Our Restaurants Menu
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.</div>
+                <div class="con-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.</div>
+            </div>
+            <button class="manu">What are on the manu</button>
+
+        </div>
+        <div class="man2">
+            <img src="img/banner1 (2).png" alt="">
+        </div>
+    </div>
+
 </body>
 
 </html>
