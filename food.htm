@@ -219,17 +219,21 @@
         }
 
         /* <!-- section-3   --> */
+        .section3 h2 {
+            font-size: 35px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .section3 h2 span {
+            color: #f7783c;
+        }
+
         .section-3 {
             display: grid;
             grid-template-columns: auto auto auto;
             gap: 30px;
             margin: 30px;
-
-
-
-
-
-
         }
 
         .section-3 .frute1,
@@ -269,11 +273,17 @@
         /* section -4  */
         .section-4 {
             display: flex;
+            height: 500px;
+            border: 2px solid black;
+            background-color: #00d084;
         }
 
         .section-4 h2 {
             font-size: 35px;
             font-weight: bolder;
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         }
 
         .section-4 h2 span {
@@ -289,16 +299,23 @@
             font-size: 19px;
             line-height: 25px;
             gap: 30px;
+            margin: 30px 0px 0px 120px;
         }
 
         .section-4 .manu {
             color: antiquewhite;
             background-color: #f7783c;
             padding: 13px 13px;
-            margin: 0px 10px;
-
+            margin: 30px 0px 0px 120px;
             font-size: 17px;
             border-radius: 25px;
+            border: none;
+        }
+
+        .section-4 .man2 img {
+            width: 350px;
+            height: 380px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -377,21 +394,27 @@
         </div>
     </div>
     <!-- section-3   -->
-    <div class="section-3">
-        <div class="frute1">
-            <img src="img/s1.jpg" alt="">
-            <h3><a href="#">Green Salad</a></h3>
-            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
-        </div>
-        <div class="frute2">
-            <img src="img/s2.jpg" alt="">
-            <h3><a href="#">Fruit Salad</a></h3>
-            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
-        </div>
-        <div class="frute3">
-            <img src="img/s3.jpg" alt="">
-            <h3><a href="#">Dessert Salad</a></h3>
-            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
+
+    <div class="section3">
+        <h2>Our <span>Popular</span> Salads</h2>
+        <div class="section-3">
+
+
+            <div class="frute1">
+                <img src="img/s1.jpg" alt="">
+                <h3><a href="#">Green Salad</a></h3>
+                <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
+            </div>
+            <div class="frute2">
+                <img src="img/s2.jpg" alt="">
+                <h3><a href="#">Fruit Salad</a></h3>
+                <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
+            </div>
+            <div class="frute3">
+                <img src="img/s3.jpg" alt="">
+                <h3><a href="#">Dessert Salad</a></h3>
+                <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet</p>
+            </div>
         </div>
     </div>
     <!-- /* section -4  */ -->
@@ -400,7 +423,7 @@
         <div class="man1">
             <h2>Our Restaurants <span>Menu</span> </h2>
             <div class="con">
-                <div class="con-1">Our Restaurants Menu
+                <div class="con-1">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
