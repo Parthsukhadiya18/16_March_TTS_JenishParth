@@ -369,3 +369,93 @@
                 margin: 10px 120px 0px 120px;
                 font-weight: bolder;
              }
+
+    /* <!-- section-7  --> */
+     .section-7 img{
+         height: 400px;
+         width: 400px;
+        margin: 0px 0px 0px 100px;
+        background-position: center ;
+
+     }   
+     .section-8{
+        height: 500px;
+     }  
+     .section-8 h1{
+       text-align: center;
+       padding: 55px 140px 0px 140px;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 35px;
+     }  
+     .section-8 .btn{
+        padding: 50px 140px;
+        position: relative;
+        margin: 0px 20px;
+      }  
+      .section-8 .btn input{
+        padding: 10px 10px;
+        border-radius: 20px;
+        border: 1px solid white;
+        width: 550px;
+        position: absolute;
+        background-color: antiquewhite;
+
+      
+      }  
+      /* solve button err  */
+      .section-8 .btn button{
+        padding: 10px 10px;        
+        border-radius:20px;
+        width: 100px;   
+        position: absolute;
+        top: 50px;
+        left: 590px;
+        color:white;
+        background-color: #f7783c;
+
+      }
+      .section-8 .home{
+        display: grid;
+        grid-template-columns: auto auto;
+         margin: 40px 90px;
+      } 
+      
+      .section-8 .home h5{
+     font-size:16px;    
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      } 
+      .section-8 .home .p2{
+        font-size:13px;    
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 18px 0px 0px 0px;
+        line-height: 20px;
+         } 
+         .section-8 .home i{
+            font-size:20px;  background-color: grey; 
+            border-radius: 50%; 
+            padding: 4px 4px;
+            margin: 5px 5px;    
+ 
+        }
+        
+        .section-8 .home .arrow{
+            display: flex;
+            gap: 8px;
+            margin: 10PX 0PX 0PX 0PX ;
+        }
+        .section-8 .home .left .arrow i{
+         background-color:white;
+         font-size: 14PX;
+         margin: 10px 1px 1px 1px;
+        }
+        .section-8 .home .left .arrow .p1{
+               margin: 10px 0px;
+           }
+           .section-8 .p3{
+            text-align: center;
+            height: 50px;
+           }
+           .section-8 .p3 span {
+            color: black;
+           }
+      
