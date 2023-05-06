@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" id="number1" placeholder="enter number" /><br /><br />
+
+        <input type="number" id="number2" placeholder="enter number" /><br /><br />
+        <input type="number" id="number3" placeholder="enter number" /><br /><br />
+
+
+        <button type="button" id="btn" onclick="return my()">Submit</button>
+        <p id="msg"></p>
+    </form>
+
+    <script>
+  function my(){
+    var num1 = document.querySelector("#number1").value;
+    var num2 = document.querySelector("#number2").value;
+    var num3 = document.querySelector("#number3").value;
+    var btn = document.querySelector("#btn");
+
+    if(num2 < num1 && num3<num1){
+       document.querySelector("#msg").innerHTML = "number1 is max"
+    }
+    else if(num1<num2 && num3<num2){
+       document.querySelector("#msg").innerHTML = "number2 is max"
+
+    } else if(num1<num3 && num2<num3){
+       document.querySelector("#msg").innerHTML = "number3 is max"
+
+    }else{
+       document.querySelector("#msg").innerHTML = "all are same"
+
+    }     
+  }
+
+       
+    </script>
+</body>
+
+</html>

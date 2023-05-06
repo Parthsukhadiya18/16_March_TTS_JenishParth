@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark-mode {
+            background-color: red
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/moon.jpg" id="moon" alt="" height="100px" width="100px">
+    <!-- <img src="img/sun.jpg" id="sun" alt="" height="100px" width="100px">
+    <img src="img/sun.jpg" id="toggle" alt="" height="100px" width="100px"> -->
+
+
+    <script>
+
+        let moon = document.querySelector("#moon")
+
+        let body = document.querySelector("body")
+
+      
+
+        moon.addEventListener("click", function () {
+
+            body.classList.toggle("dark-mode")
+            if(body.classList.contains("dark-mode")=== true){
+                  moon.src='img/sun.jpg'
+            }else{
+                moon.src='img/moon.jpg'
+
+            }
+        })
+
+//   ==================================== m  
+// let moon = document.querySelector("#moon")
+//         let sun = document.querySelector("#sun")
+//         let toggle = document.querySelector("#toggle")
+
+//         let body = document.querySelector("body")
+
+        // moon.addEventListener("click", function () {
+
+        //     body.classList.add("dark-mode")
+        // })
+
+
+        // sun.addEventListener("click", function () {
+
+        //     body.classList.remove("dark-mode")
+        // })
+
+        // toggle.addEventListener("click", function () {
+
+        //     body.classList.toggle("dark-mode")
+        // })
+
+    </script>
+</body>
+
+</html>

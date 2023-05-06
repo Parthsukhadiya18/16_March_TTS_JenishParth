@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#" method="post" name="myform" onsubmit="return form_valid()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="enter name" /><br /><br />
+
+        <label for="gen">Gender</label>
+        <input type="radio" id="gen" name="gen" />Male
+        <!-- <input type="radio" id="gen" name="gen" />FeMale<br /><br /> -->
+
+        <label for="quli">Qualefication</label>
+        <input type="checkbox" id="quli" name="c1" />10
+        <!-- <input type="checkbox" id="quli" name="c2" />12<br /><br /> -->
+
+        <label for="city">City</label>
+        <select name="city" id="city">
+            <option value="-1">---select--</option>
+
+            <option value="">Surat</option>
+            <option value="">Baroda</option>
+
+        </select><br><br>
+
+        <label for="mno">Mobile No</label>
+        <input type="number" id="mno" name="mno" placeholder="enter mno" /><br /><br />
+
+
+
+        <input type="button" onclick="form_valid()" value="Submit" />
+    </form>
+
+
+    <script>
+        function form_valid() {
+            // let name = document.querySelector("#name").value;
+
+            // text name
+            let name = document.myform.name.value;
+            if (name == "") {
+                alert("enter name");
+            } else if (!isNaN(name)) {
+                alert("enter alphabet");
+            }
+
+            // radio button
+            let male = document.myform.gen[0].checked;
+            let female = document.myform.gen[1].checked;
+
+            if (male == false && female == false) {
+                alert("select gender");
+                return false;
+            }
+
+            // check box
+            let c1 = document.myform.c1.checked;
+            let c2 = document.myform.c2.checked;
+            if (c1 == false && c2 == false) {
+                alert("select qualification");
+                return false;
+            }
+
+            // Selection
+            let city = document.myform.city.value;
+            if (city == -1) {
+                alert("select city");
+                return false;
+            }
+
+
+            //  number
+            let mno = document.myform.mno.value;
+            if (mno == "") {
+                alert("enter number");
+                return false;
+            } else if (mno < 10) {
+                alert("enter number not more than 10 digit ");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
