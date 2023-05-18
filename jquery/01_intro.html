@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Intro</title>
+    <!-- cdn  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js" integrity="sha512-no2/KDsCWSGu0LVyWVdwha859xFOn1K8oLPIi2O6gxIv5fQ704L2pQh5H8X4PpTEzjGD58/M7TYwdf8LWeSQKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div class="bxslider">
+        <div><img src="https://bxslider.com/assets/coffee1-7325690f507d48962d312be15d9d8929be4a5ff04d184d5ed0a96c1b27940260.jpg"
+                title="Parth" /></div>
+        <div><img src="https://bxslider.com/assets/coffee2-8bb17517b21cc5b38f3ea7d14cfc4b4c82cc51b99e82bfc3a6d02688ab6c5988.jpg"
+                title="Coffee 2" /></div>
+        <div><img src="https://bxslider.com/assets/coffee1-7325690f507d48962d312be15d9d8929be4a5ff04d184d5ed0a96c1b27940260.jpg"
+                title="Coffee 3" /></div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 600
+            });
+        });
+    </script>
+</body>
+
+</html>

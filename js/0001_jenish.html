@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #D1 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        #D2 {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 94, 0);
+            position: absolute;
+            /* top: 0px;
+            left:0px; */
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick="jenish()">click</button>
+    <button id="btn" onclick="Resv()">reclick</button>
+
+    <div id="D1">
+        <div id="D2">parth</div>
+    </div>
+    <script>
+            function jenish(){
+              var id = null;
+              var pos = 0;
+              clearInterval(id);
+              id= setInterval(parth,10);
+              function parth(){
+                if(pos== 200){
+                clearInterval(id);                
+                }else{
+                 pos++;
+                 document.getElementById("D2").style.top = pos + "px";
+                 document.getElementById("D2").style.left = pos + "px"
+                }
+              }
+            }
+             function Resv() {
+                var id = null;
+                let pos = 200;
+                clearInterval(id)
+                id = setInterval(parth, 10)
+            function parth() {
+                if (pos == 0) {
+                    clearInterval(id);
+                } else {
+                    pos--;
+                    document.getElementById("D2").style.top = pos + "px";
+                    document.getElementById("D2").style.left = pos + "px";
+                    document.getElementById("D2").style.color = "green";
+                }
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
