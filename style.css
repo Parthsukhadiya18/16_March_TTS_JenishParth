@@ -198,14 +198,70 @@ header .main .main-2 ul li a:hover {
   margin-top: 40px;
 }
 /* section 3  */
+.section3 {
+  border: 1px solid green;
+}
 .section3 h2 {
   text-align: center;
   font-size: 35px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 20px;
 }
 .section3 span {
   color: coral;
 }
 .section-3 {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.section-3 .frute1 {
+  margin: 25px 20px 20px 0px;
+  width: 28%;
+  padding: 50px 35px;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease-out 0s;
+}
+.section-3 .frute1::before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: -26px;
+  width: 185px;
+  height: 185px;
+  background-color: coral;
+  border-radius: 0 50%;
+  z-index: -1;
+  transition: all 0.2s ease-out 0s;
+}
+.section-3 .frute1 img {
+  border-radius: 50%;
+  border: 12px solid rgb(240, 237, 237);
+  height: 180px;
+}
+.section-3 .frute1 h3 {
+  color: coral;
+}
+.section-3 .frute1:hover:after {
+  border-right: 25px solid coral;
+  border-bottom: 25px solid coral;
+}
+
+.section-3 .frute1:after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-right: 25px solid coral;
+  border-left: 25px solid transparent;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid coral;
+  bottom: 20px;
+  right: 20px;
+  z-index: -1;
+  transition: all 0.2s ease-out 0s;
 }
