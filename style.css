@@ -137,6 +137,7 @@ header .main .main-2 ul li a:hover {
 .section-2 {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 100%;
 }
 .section-2 .img {
@@ -198,7 +199,7 @@ header .main .main-2 ul li a:hover {
   margin-top: 40px;
 }
 /* section 3  */
-.section3 {
+/* .section3 {
   border: 1px solid green;
 }
 .section3 h2 {
@@ -233,7 +234,7 @@ header .main .main-2 ul li a:hover {
   left: -26px;
   width: 185px;
   height: 185px;
-  background-color: coral;
+  background-color: rgb(112, 255, 80);
   border-radius: 0 50%;
   z-index: -1;
   transition: all 0.2s ease-out 0s;
@@ -264,4 +265,4 @@ header .main .main-2 ul li a:hover {
   right: 20px;
   z-index: -1;
   transition: all 0.2s ease-out 0s;
-}
+} */
