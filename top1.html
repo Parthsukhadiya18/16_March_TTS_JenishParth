@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 16px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #back-to-top:hover {
+            background-color: #333;
+        }
+
+        div {
+            height: 2500px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="back-to-top">Back to Top</button>
+
+    <div></div>
+
+    <script>
+        let button = document.getElementById('back-to-top');
+
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 200) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        button.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
