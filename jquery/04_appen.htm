@@ -11,28 +11,27 @@
 </head>
 
 <body>
-    <h1>append() prepend()</h1>
-    <button id="Append" type="button">Append</button>
-    <button id="Prepend" type="button">Prepend</button>
+    <h1>append() prepend() after() before()</h1>
+    <button id="app" type="button">Append</button>
+    <button id="pre" type="button">Prepend</button>
     <div id="hed1">Heloo</div>
-    <h1> after() before()</h1>
-    <button id="After" type="button">After</button>
-    <button id="Before" type="button">Before</button><br>
+    <button id="aft" type="button">After</button>
+    <button id="bef" type="button">Before</button>
     <img src="img/coffee1.jpg" id="img1" height="100px" width="100px">
 
 
     <script>
         $(document).ready(function () {
-            $("#Append").click(function () {
-                $("#hed1").append("Apprend");
+            $("#app").click(function () {
+                $("#hed1").append("<h1>Apprend</h1>");
             })
-            $("#Prepend").click(function () {
+            $("#pre").click(function () {
                 $("#hed1").prepend("<h1>Prepend</h1>");
             })
-            $("#After").click(function () {
+            $("#aft").click(function () {
                 $("#img1").after("<img src='img/coffee1.jpg' id='img1' height='200px' width='200px'>");
             })
-            $("#Before").click(function () {
+            $("#bef").click(function () {
                 $("#img1").before("<img src='img/coffee1.jpg' id='img1' height='200px' width='200px'>");
             })
         })

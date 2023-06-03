@@ -10,6 +10,8 @@
         .ancestors * {
             display: block;
             border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
             margin: 15px;
         }
     </style>
@@ -17,13 +19,13 @@
     <script>
         $(document).ready(function () {
             $(".parent").click(function () {
-                $("span").parent().css({ "border": "2px solid red" });
+                $("span").parent().css({ "color": "red", "border": "2px solid red" });
             })
             $(".parents").click(function () {
-                $("span").parents().css({ "border": "2px solid blue" });
+                $("span").parents().css({ "color": "blue", "border": "2px solid blue" });
             })
             $(".parentu").click(function () {
-                $("span").parentsUntil("div").css({ "border": "2px solid yellow" });
+                $("span").parentsUntil("ul").css({ "color": "yellow", "border": "2px solid yellow" });
             })
         });
     </script>
@@ -35,6 +37,13 @@
     <button type="button" class="parentu">Parentuntill</button>
 
     <div class="ancestors">
+        <div style="width:500px;">div (great-grandparent)
+            <ul>ul (grandparent)
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
 
         <div style="width:500px;">div (grandparent)
             <p>p (direct parent)

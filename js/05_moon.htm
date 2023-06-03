@@ -15,51 +15,23 @@
 
 <body>
     <img src="img/moon.jpg" id="moon" alt="" height="100px" width="100px">
-    <!-- <img src="img/sun.jpg" id="sun" alt="" height="100px" width="100px">
-    <img src="img/sun.jpg" id="toggle" alt="" height="100px" width="100px"> -->
 
 
     <script>
+        let icon = document.querySelector("#moon");
+        let body = document.querySelector("body");
 
-        let moon = document.querySelector("#moon")
-
-        let body = document.querySelector("body")
-
-      
-
-        moon.addEventListener("click", function () {
-
+        icon.addEventListener("click", function () {
             body.classList.toggle("dark-mode")
-            if(body.classList.contains("dark-mode")=== true){
-                  moon.src='img/sun.jpg'
-            }else{
-                moon.src='img/moon.jpg'
-
+            if (body.classList.contains("dark-mode") == true) {
+                icon.src = "img/sun.jpg";
+            } else {
+                icon.src = "img/moon.jpg";
             }
+
         })
 
-//   ==================================== m  
-// let moon = document.querySelector("#moon")
-//         let sun = document.querySelector("#sun")
-//         let toggle = document.querySelector("#toggle")
 
-//         let body = document.querySelector("body")
-
-        // moon.addEventListener("click", function () {
-
-        //     body.classList.add("dark-mode")
-        // })
-
-
-        // sun.addEventListener("click", function () {
-
-        //     body.classList.remove("dark-mode")
-        // })
-
-        // toggle.addEventListener("click", function () {
-
-        //     body.classList.toggle("dark-mode")
-        // })
 
     </script>
 </body>

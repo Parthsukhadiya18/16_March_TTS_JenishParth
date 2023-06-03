@@ -22,22 +22,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".Childern").click(function () {
-                $("ul").children().css({ "border": "2px solid red" });
+            $(".btn1").click(function () {
+                $("div").children().css({ "color": "red", "border": "2px solid red" });
             })
             $(".btn2").click(function () {
-                $("div").children(".ul").css({ "border": "2px solid blue" });
+                $("div").children(".ul").css({ "color": "blue", "border": "2px solid blue" });
             })
             $(".btn3").click(function () {
-                $("div").find("ul").css({ "border": "2px solid yellow" });
+                $("div").find("ul").css({ "color": "yellow", "border": "2px solid yellow" });
             })
         });
     </script>
 </head>
 
 <body>
-    <button type="button" class="Childern">Childern</button>
-    <button type="button" class="btn2">Childrens</button>
+    <button type="button" class="btn1">Childern</button>
+    <button type="button" class="btn2">Children</button>
     <button type="button" class="btn3">Find</button>
 
     <div class="ancestors">

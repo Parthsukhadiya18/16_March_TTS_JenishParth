@@ -10,39 +10,40 @@
 
 <body>
     <form action="">
+        <label for="number1">Number1</label>
         <input type="number" id="number1" placeholder="enter number" /><br /><br />
 
+        <label for="number2">Number2</label>
         <input type="number" id="number2" placeholder="enter number" /><br /><br />
-        <input type="number" id="number3" placeholder="enter number" /><br /><br />
 
-
-        <button type="button" id="btn" onclick="return my()">Submit</button>
+        <button type="button" id="btn" onclick="my()">Submit</button>
         <p id="msg"></p>
     </form>
 
     <script>
-  function my(){
-    var num1 = document.querySelector("#number1").value;
-    var num2 = document.querySelector("#number2").value;
-    var num3 = document.querySelector("#number3").value;
-    var btn = document.querySelector("#btn");
 
-    if(num2 < num1 && num3<num1){
-       document.querySelector("#msg").innerHTML = "number1 is max"
-    }
-    else if(num1<num2 && num3<num2){
-       document.querySelector("#msg").innerHTML = "number2 is max"
 
-    } else if(num1<num3 && num2<num3){
-       document.querySelector("#msg").innerHTML = "number3 is max"
+        function my() {
+            let number1 = document.querySelector("#number1").value;
+            let number2 = document.querySelector("#number2").value;
 
-    }else{
-       document.querySelector("#msg").innerHTML = "all are same"
+            if (number1 < number2) {
+                // console.log("hello");
+                document.querySelector("#msg").innerHTML = "number2 is mix";
 
-    }     
-  }
 
-       
+            } else if (number2 < number1) {
+                // console.log("no");
+                document.querySelector("#msg").innerHTML = "number1 is mix";
+
+            }
+            else {
+                // console.log("no");
+                document.querySelector("#msg").innerHTML = "both are same";
+
+            }
+
+        }
     </script>
 </body>
 

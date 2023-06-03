@@ -14,7 +14,7 @@
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="enter name" /><br /><br />
 
-        <label for="gen">Gender</label>
+        <!-- <label for="gen">Gender</label>
         <input type="radio" id="gen" name="gen" />Male
         <!-- <input type="radio" id="gen" name="gen" />FeMale<br /><br /> -->
 
@@ -32,7 +32,7 @@
         </select><br><br>
 
         <label for="mno">Mobile No</label>
-        <input type="number" id="mno" name="mno" placeholder="enter mno" /><br /><br />
+        <input type="number" id="mno" name="mno" placeholder="enter mno" /><br /><br /> -->
 
 
 
@@ -46,9 +46,13 @@
 
             // text name
             let name = document.myform.name.value;
+
             if (name == "") {
                 alert("enter name");
-            } else if (!isNaN(name)) {
+            }else if(name == "parth"){
+                alert("Hello parth");
+            } 
+            else if (!isNaN(name)) {
                 alert("enter alphabet");
             }
 
