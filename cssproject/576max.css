@@ -157,4 +157,56 @@
   .section-2 .con img {
     margin-top: 20px;
   }
+  /* section4  */
+  .section-4 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #11ffbd;
+    height: 100%;
+  }
+  .man1 {
+    width: 80%;
+    margin: 90px 0px 0px 30px;
+  }
+  .man1 h2 {
+    font-size: 5.3vh;
+  }
+
+  .con-1,
+  .con-2 {
+    font-size: 2.2vh;
+  }
+
+  .man2 img {
+    display: none;
+  }
+  /* section5  */
+  .section-5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    height: 100%;
+  }
+
+  /* section-6  */
+  .section-6 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .section-6 .chef {
+    width: 70%;
+    margin: 10%;
+  }
+  .section-6 .chef h1 {
+    font-size: 30px;
+  }
+
+  .section-6 .chef p {
+    font-size: 16px;
+  }
+  .section-6 .img img {
+    height: 300px;
+  }
 }

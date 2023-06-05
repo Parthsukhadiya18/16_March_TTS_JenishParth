@@ -267,6 +267,7 @@ header .main .main-2 ul li a:hover {
   z-index: -1;
   transition: all 0.2s ease-out 0s;
 }
+/* section4  */
 .section-4 {
   display: flex;
   width: 100%;
@@ -290,7 +291,7 @@ header .main .main-2 ul li a:hover {
 .man1 .con {
   margin-top: 10px;
   display: flex;
-  text-align: start;
+  text-align: justify;
   gap: 20px;
   line-height: 20px;
 }
@@ -323,4 +324,67 @@ button:hover {
 }
 .man2 img {
   width: 300px;
+}
+
+/* section-5  */
+
+.section-5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  height: 300px;
+  background-color: azure;
+}
+
+.section-5 .icon {
+  margin: 50px 50px 0px 50px;
+}
+.section-5 .icon:hover {
+  box-shadow: 5px 5px 5px red;
+}
+.section-5 .icon i {
+  font-size: 30px;
+  color: tomato;
+}
+.section-5 .icon span {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.section-5 .icon p {
+  font-size: 18px;
+  margin: 20px 0px 0px 46px;
+  text-align: justify;
+  line-height: 25px;
+}
+/* section-6  */
+.section-6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+  justify-content: space-around;
+}
+.section-6 .chef {
+  width: 40%;
+  margin: 10%;
+}
+.section-6 .chef h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.section-6 .chef h1 span {
+  color: coral;
+}
+.section-6 .chef p {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 20px 0px 0px 0px;
+  text-align: justify;
+  font-weight: lighter;
+  opacity: 0.7;
+}
+.section-6 .img {
+  height: auto;
 }
