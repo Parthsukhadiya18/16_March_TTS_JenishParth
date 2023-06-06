@@ -365,4 +365,45 @@
     width: 40%;
     height: auto;
   }
+  /* section7  */
+  .owl-theme {
+    animation: Chang 4s ease infinite;
+    height: 100%;
+    width: 100%;
+  }
+  .item {
+    margin: 50px;
+  }
+  .item i {
+    font-size: 35px;
+  }
+  .item span {
+    margin: 0px 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .item p {
+    font-size: 18px;
+    margin: 20px 0px 0px 45px;
+    padding-left: 20px;
+    text-align: justify;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .item h4 {
+    margin: 0px 0px 0px 45px;
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  .item .parth {
+    margin: 0px 0px 0px 47px;
+    padding-left: 20px;
+  }
+  .item .parth i {
+    font-size: 15px;
+  }
+  .item img {
+    margin: 20px 0px 0px 45px;
+  }
 }

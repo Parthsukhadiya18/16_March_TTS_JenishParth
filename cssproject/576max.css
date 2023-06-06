@@ -209,4 +209,41 @@
   .section-6 .img img {
     height: 300px;
   }
+
+  /* section7  */
+  .owl-theme {
+    animation: Chang 4s ease infinite;
+    height: 100%;
+    width: 100%;
+  }
+  .item {
+    margin: 70px 25px 0px 25px;
+  }
+  .item i {
+    font-size: 30px;
+  }
+  .item span {
+    margin: 0px 5px;
+    font-size: 18px;
+  }
+  .item p {
+    font-size: 16px;
+    margin: 20px 0px 0px 30px;
+    padding-left: 12px;
+  }
+  .item h4 {
+    margin: 0px 0px 0px 30px;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .item .parth {
+    margin: 0px 0px 0px 30px;
+    padding-left: 10px;
+  }
+  .item .parth i {
+    font-size: 15px;
+  }
+  .item img {
+    margin: 20px 0px 0px 40px;
+  }
 }
