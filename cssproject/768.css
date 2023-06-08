@@ -217,4 +217,31 @@
   }
 
   /* section7  */
+
+  /* section 8  */
+
+  .section-8 h1 {
+    font-size: 35px;
+    padding: 20px 18%;
+  }
+  .section-8 .search {
+    display: flex;
+    justify-content: center;
+  }
+  .section-8 .search .btn-search {
+    width: 45%;
+
+    height: 45px;
+  }
+  .section-8 .search .Subscribe {
+    width: 15%;
+
+    height: 45px;
+  }
+  .section-8 .fot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 60px;
+    padding: 60px 60px;
+  }
 }

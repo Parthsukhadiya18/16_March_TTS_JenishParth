@@ -246,4 +246,44 @@
   .item img {
     margin: 20px 0px 0px 40px;
   }
+  /* section 8  */
+
+  .section-8 h1 {
+    font-size: 27px;
+    padding: 20px 5%;
+  }
+  .section-8 .search {
+    display: flex;
+    justify-content: center;
+  }
+  .section-8 .search .btn-search {
+    width: 50%;
+    height: 45px;
+  }
+  .section-8 .search .Subscribe {
+    width: 20%;
+    height: 45px;
+  }
+  .section-8 .fot {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 60px;
+    padding: 60px 60px;
+  }
+
+  .section-8 .fot h4 {
+    font-size: 20px;
+  }
+
+  .section-8 .fot .bfot i {
+    font-size: 20px;
+    padding: 10px 12px;
+    background-color: #c07f7f;
+    border-radius: 50%;
+  }
+
+  .section-8 .dfot p {
+    padding: 5px;
+    font-size: 16px;
+  }
 }

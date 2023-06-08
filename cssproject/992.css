@@ -406,4 +406,81 @@
   .item img {
     margin: 20px 0px 0px 45px;
   }
+
+  /* .section-8  */
+
+  .section-8 h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 22%;
+    font-weight: bolder;
+  }
+  .section-8 .search {
+    display: flex;
+    justify-content: center;
+  }
+  .section-8 .search .btn-search {
+    background-color: #87f786;
+    padding: 10px 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    width: 45%;
+    border: none;
+    height: 50px;
+  }
+  .section-8 .search .Subscribe {
+    background-color: #c90b0b;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 10px;
+    width: 10%;
+    border: none;
+    height: 50px;
+  }
+  .section-8 .fot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid green;
+    gap: 40px 60px;
+    padding: 60px 60px;
+  }
+
+  .section-8 .fot h4 {
+    font-size: 22px;
+  }
+  .section-8 .fot p {
+    /* font-size: 18px; */
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin: 20px 0px;
+  }
+  .section-8 .fot .bfot {
+  }
+  .section-8 .fot .bfot i {
+    font-size: 22px;
+    padding: 10px 12px;
+    background-color: #c07f7f;
+    border-radius: 50%;
+  }
+  .section-8 .fot .arrow {
+    margin: 10px 0px;
+  }
+
+  .section-8 .fot span {
+    margin: 0px 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .section-8 .dfot {
+    text-align: center;
+  }
+  .section-8 .dfot p {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .section-8 .dfot p span {
+    font-weight: bolder;
+  }
 }
