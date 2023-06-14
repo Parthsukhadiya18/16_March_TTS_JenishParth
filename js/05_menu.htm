@@ -90,11 +90,10 @@
         <h1>Logo</h1>
         <button type="button" class="add"><i class="fa fa-bars"></i></button>
         <ul class="menu">
-            <button type="button"><i class="fa fa-bars close-btn""></i></button>
             <li><a href=" #">Home</a> </li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Servies</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Servies</a></li>
 
         </ul>
     </nav>
@@ -103,15 +102,12 @@
 <script>
     let btn = document.querySelector("button");
     let menu = document.querySelector(".menu")
-    let closeBtn = document.querySelector(".close-btn")
 
     btn.addEventListener("click", () => {
         //  menu.classList.toggle("nav-up");
-        menu.classList.add("nav-up");
+        menu.classList.toggle("nav-up");
     })
-    closeBtn.addEventListener("click", () => {
-        menu.classList.remove("nav-up");
-    })
+
 </script>
 </body>
 
